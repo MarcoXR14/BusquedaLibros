@@ -19,7 +19,7 @@ public class Principal {
         var json = consumoAPI.obtenerDatos(URL_BASE);
         System.out.println(json);
         var datos = conversor.obtenerDatos(json, Datos.class);
-        System.out.println(datos);
+        System.out.println("Datos: " + datos);
 
         //Top 10 libros más descargados
         System.out.println("Estos son los 10 libros más descargados segun Gutendex:");
